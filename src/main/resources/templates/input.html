@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:html="http://www.w3.org/1999/html">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+</head>
+<body>
+<form action="#" th:action="@{/calculate}" th:object="${position}" method="post">
+    <p>Enter co-ordinates with commands: <input type="text" th:field="*{userInput}" /></p>
+    <td th:if="${#fields.hasErrors('userInput')}" th:errors="*{userInput}"></td>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<h2>Result</h2>
+<p th:text="'The new co-ordinates are: ' + ${newPosition.yCoordinate}+','+${newPosition.xCoordinate} " />
+<a href="/input">Calculate new co-ordinates</a>
+
+</body>
+</html>
